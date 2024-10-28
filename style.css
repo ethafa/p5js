@@ -11,20 +11,16 @@ html, body {
 
         .sketches-container {
             display: flex;
-            justify-content: center;
+          
             align-items: flex-start;
-            gap: 20px;
+        
             flex-wrap: wrap;
             max-width: 100%;
             margin: 0 auto;
         }
 
         .sketch-wrapper {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.2s ease;
+            
         }
 
         .sketch-wrapper:hover {
