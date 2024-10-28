@@ -16,9 +16,9 @@ body {
 
 /* Each sketch wrapper */
 .sketch-wrapper {
-     width: 300px; /* Fixed size for sketches */
-    height: 300px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   /*  width: 300px; /* Fixed size for sketches */
+   /* height: 300px;
+   /* border: 1px solid #ddd;
+   /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
    
 }
