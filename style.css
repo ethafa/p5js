@@ -1,73 +1,19 @@
-/* Reset default margins and paddings */
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
-    padding: 20px;
-    background: #f0f0f0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Container for sketches */
-.sketches-container {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px; /* Add some space between each sketch */
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-/* Individual sketch wrapper */
-.sketch-wrapper {
-    width: 300px; /* Set a fixed width for each sketch */
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-/* Hover effect on each sketch */
-.sketch-wrapper:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Title styling for each sketch */
-.sketch-title {
-    padding: 10px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    border-bottom: 1px solid #eee;
-    background: white;
-}
-
-/* Canvas styling */
-canvas {
-    display: block; /* Removes extra space below canvas */
-    width: 100%; /* Ensure canvas fits within the sketch wrapper */
-}
-
-/* Responsive design */
-@media (max-width: 1240px) {
-    .sketches-container {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 420px) {
-    body {
-        padding: 10px;
-    }
-
-    .sketch-wrapper {
-        width: 100%; /* Make each sketch full-width on smaller screens */
-    }
-}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #f0f0f0;
+        }
+        .sketch-container {
+            display: flex;
+            gap: 20px; /* Space between sketches */
+        }
+        .sketch-wrapper {
+            width: 300px;
+            height: 300px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
