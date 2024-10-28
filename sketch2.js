@@ -1,4 +1,4 @@
-let sketch1 = (p) => {
+let sketch2 = (p) => {
   p.setup = function() {
     p.createCanvas(400, 400);
   p.background(250,250,100);
