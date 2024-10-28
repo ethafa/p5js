@@ -1,1 +1,21 @@
+/* Reset body and set layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+}
 
+/* Container holding both sketches */
+.sketch-container {
+    display: flex;
+    gap: 20px; /* Space between the sketches */
+}
+
+/* Each sketch wrapper */
+.sketch-wrapper {
+  
+   
+}
