@@ -5,24 +5,24 @@ let sketch3 = (p) => {
   };
   
     p.draw = function() {
-    
-    p.background(0);
-    
-    p.fill(0,255,0);
-    p.noStroke();
-    p.circle(200,200,50,50);
-    
-    p.fill(140,0,191);
-    p.circle(100,100,25,25);
-    p.circle(300,100,25,25);
-    p.circle(300,300,25,25);
-    p.circle(100,300,25,25);
-    
-    p.stroke(255,255,255);
-    p.noFill();
-    p.rect(150,150,100,100);
-    p.rect(100,100,200,200);
-   
+  
+
+
+  p.background(0);
+  
+  p.fill(0,255,0);
+  p.noStroke();
+  p.circle(mouseX,mouseY,50,50);
+  
+  p.fill(500,10,191);
+  p.circle(100,100,25,25);
+  p.circle(300,100,25,25);
+  p.circle(300,300,25,25);
+  p.circle(100,300,25,25);
+  
+ 
+  
+}
       };
   };
   
