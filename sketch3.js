@@ -1,15 +1,11 @@
 let sketch3 = (p) => {
   p.setup = function() {
     p.createCanvas(400, 400);
-    p.background(250,250,100);
+ 
   };
   
-    p.draw = function() {
-  
-
-
+  p.draw = function() {
   p.background(0);
-  
   p.fill(0,255,0);
   p.noStroke();
   p.circle(mouseX,mouseY,50,50);
@@ -22,4 +18,4 @@ let sketch3 = (p) => {
       };
   };
   
-  new p5(sketch3, 'sketch1'); // Attach sketch to the div with id="sketch1"
+  new p5(sketch3, 'sketch3'); // Attach sketch to the div with id="sketch1"
