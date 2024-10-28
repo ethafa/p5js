@@ -1,4 +1,4 @@
-let sketch1 = (p) => {
+let sketch3 = (p) => {
   p.setup = function() {
     p.createCanvas(400, 400);
     p.background(250,250,100);
@@ -26,4 +26,4 @@ let sketch1 = (p) => {
       };
   };
   
-  new p5(sketch1, 'sketch1'); // Attach sketch to the div with id="sketch1"
+  new p5(sketch3, 'sketch1'); // Attach sketch to the div with id="sketch1"
