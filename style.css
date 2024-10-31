@@ -11,6 +11,7 @@ body {
 /* Container holding both sketches */
 .sketch-container {
     display: flex;
+    float: right;
     /* gap: 20px;  Space between the sketches */
 }
 
