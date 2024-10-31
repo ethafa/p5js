@@ -1,7 +1,7 @@
 /* Reset body and set layout */
 body {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     min-height: 100vh;
     margin: 0;
@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-wrap: wrap; /* Wrap items to the next line if needed */
     justify-content: center;
-    gap: 10px; /* Space between sketches */
+     /*gap: 10px; Space between sketches */
     max-width: 100%; /* Allows sketches to fill the available width */
 }
 
