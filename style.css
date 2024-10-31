@@ -1,26 +1,25 @@
-/* Reset body and set layout */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    float: right;
     min-height: 100vh;
     margin: 0;
     background: #f0f0f0;
 }
 
-/* Container holding both sketches */
+/* Container holding sketches */
 .sketch-container {
     display: flex;
-    float: right;
-    /* gap: 20px;  Space between the sketches */
+    flex-wrap: wrap; /* Allow sketches to wrap to the next line */
+    justify-content: center; /* Center sketches on the line */
+    gap: 10px; /* Optional: space between sketches */
+    padding: 10px; /* Optional: padding around sketches */
+    max-width: 100%; /* Ensures the container adjusts to the screen width */
 }
 
-/* Each sketch wrapper */
+/* Individual sketch wrapper */
 .sketch-wrapper {
-   /*  width: 300px; /* Fixed size for sketches */
-   /* height: 300px; */
-   /* border: 1px solid #ddd; */
-   /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
-   
+    flex: 1 1 300px; /* Flexible width with a minimum of 300px */
+    max-width: 400px; /* Prevent sketches from growing too large */
+    aspect-ratio: 1 / 1; /* Maintain square aspect ratio */
 }
