@@ -1,27 +1,31 @@
 let sketch6 = (p) => {
-  let r = 0;
-  let b = 255;
+  let x = 100;
+  let y = 50;
+
+  let colg1 = 255;
+  let colg2 = 0;
+  let colg3 = 0;
 
   p.setup = function() {
     p.createCanvas(400, 400);
+    p.background(0);
   };
 
   p.draw = function() {
-    // Map the red color component based on the mouse's x position
-    r = p.map(p.mouseX, 0, p.width, 0, 255);
-    
-    // Set the background color with dynamic red and fixed blue component
-    p.background(r, 0, b);
-    
-    // Draw the main moving circle
-    p.fill(70, 200, 80);
+    colg1 = p.random(100, 255);
+    colg2 = 0;
+    colg3 = p.random(100, 190);
+    x = p.random(0, p.width);
+    y = p.random(0, p.height);
+
+    // Set the alpha to 90 for semi-transparency
+    p.fill(colg1, colg2, colg3, 90);
     p.noStroke();
-    p.ellipse(p.mouseX, 200, 50, 50);
-    
-    // Display text
-    p.fill(0, 0, 255);
+    p.ellipse(x, y, 24, 24);
+
+    p.fill(0, 255, 0);
     p.textStyle(p.BOLDITALIC);
-    p.text('be patient', 300, 205);
+    p.text('one step at a time', 150, 200); // Display message
   };
 };
 
